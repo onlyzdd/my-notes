@@ -10,9 +10,9 @@
 
 `<!DOCTYPE>` 声明必须位于 HTML 文档中最开始的位置，在 `<html>` 标签之前。`<!DOCTYPE>` 声明并不是一个 HTML 标签，它告诉 Web 浏览器这个页面使用的 HTML 的版本。
 
-在 HTML 4.01 中，`<!DOCTYPE>` 声明必须提供一个 DTD，因为 HTML 4.01 是基于 SGML 的。这个 DTD 文件确定了标记语言的规则，这样浏览器才能正确地将内容渲染出来。HTML5 并不基于 SGML，所以也就不需要引用 DTD。
+在 HTML 4.01 中，`<!DOCTYPE>` 声明必须提供一个 DTD，因为 HTML 4.01 是基于SGML 的。这个 DTD 文件确定了标记语言的规则，这样浏览器才能正确地将内容渲染出来。HTML5 并不基于 SGML，所以也就不需要引用 DTD。
 
-**提示：**总是在你的 HTML 文档中添加 `<!DOCTYPE>` 声明，这样浏览器才能知道这是一个怎样的文档。
+**提示：**总是在你的 HTML 文档中添加 `<!DOCTYPE>` 声明，这样浏览器才能知道这是一个怎样的文档。
 
 ### 浏览器支持
 
@@ -20,7 +20,7 @@
 
 ### HTML 4.01 和 HTML 5 的差别
 
-在 HTML 4.01 中有 3 中不同的 `<!DOCTYPE>` 声明，在 HTML 5 中只有一中。
+在 HTML 4.01 中有 3 中不同的 `<!DOCTYPE>` 声明，在 HTML 5 中只有一中。
 
 ```html
 <!DOCTYPE html>
@@ -976,7 +976,7 @@
 
 ### 提示和注意
 
-**提示：**`<!DOCTYPE>` 声明对大小写不敏感。
+**提示：**`<!DOCTYPE>` 声明对大小写不敏感。
 **提示：**如果想要检查你的 Web 文档是否是有效的，前往 [W3C 验证服务](http://validator.w3.org/)。
 
 ### 常用的文档类型声明
@@ -1036,7 +1036,7 @@
 
 #### XHTML 1.1
 
-这个 DTD 文件与 XHTML 1.0 Strict 相同，但是允许你添加模型。所有的标签都必须以规格化的 XML 格式书写。
+这个 DTD 文件与 XHTML 1.0 Strict 相同，但是允许你添加模型。所有的标签都必须以规格化的 XML 格式书写。
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
