@@ -1,9 +1,3 @@
-<style>
-  td .marked {
-    color: #e80000;
-  }
-</style>
-
 ## HTML `<!DOCTYPE>` 声明
 
 ### 定义和用法
@@ -61,7 +55,7 @@
     </tr>
     <tr>
       <td>&lt;acronym&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -77,11 +71,11 @@
     </tr>
     <tr>
       <td>&lt;applet&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;area&gt;</td>
@@ -89,31 +83,31 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;article&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;aside&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;audio&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;b&gt;</td>
@@ -133,19 +127,19 @@
     </tr>
     <tr>
       <td>&lt;basefont&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;bdi&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;bdo&gt;</td>
@@ -153,11 +147,11 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;big&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -198,10 +192,10 @@
     <tr>
       <td>&lt;canvas&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;caption&gt;</td>
@@ -213,11 +207,11 @@
     </tr>
     <tr>
       <td>&lt;center&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;cite&gt;</td>
@@ -241,7 +235,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;colgroup&gt;</td>
@@ -249,15 +243,15 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;datalist&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;dd&gt;</td>
@@ -273,15 +267,15 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;details&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;dfn&gt;</td>
@@ -294,18 +288,18 @@
     <tr>
       <td>&lt;dialog&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;dir&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;div&gt;</td>
@@ -342,10 +336,10 @@
     <tr>
       <td>&lt;embed&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;fieldset&gt;</td>
@@ -358,34 +352,34 @@
     <tr>
       <td>&lt;figcaption&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;figure&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;font&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;footer&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;form&gt;</td>
@@ -397,19 +391,19 @@
     </tr>
     <tr>
       <td>&lt;frame&gt;</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;frameset&gt;</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;h1&gt; to &lt;h6&gt;</td>
@@ -430,10 +424,10 @@
     <tr>
       <td>&lt;header&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;hr&gt;</td>
@@ -463,9 +457,9 @@
       <td>&lt;iframe&gt;</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;img&gt;</td>
@@ -489,7 +483,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;kbd&gt;</td>
@@ -502,10 +496,10 @@
     <tr>
       <td>&lt;keygen&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;label&gt;</td>
@@ -542,10 +536,10 @@
     <tr>
       <td>&lt;main&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;map&gt;</td>
@@ -553,31 +547,31 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;mark&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;menu&gt;</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;menuitem&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;meta&gt;</td>
@@ -590,26 +584,26 @@
     <tr>
       <td>&lt;meter&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;nav&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;noframes&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;noscript&gt;</td>
@@ -654,10 +648,10 @@
     <tr>
       <td>&lt;output&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;p&gt;</td>
@@ -686,10 +680,10 @@
     <tr>
       <td>&lt;progress&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;q&gt;</td>
@@ -702,34 +696,34 @@
     <tr>
       <td>&lt;rp&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;rt&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;ruby&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;s&gt;</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;samp&gt;</td>
@@ -750,10 +744,10 @@
     <tr>
       <td>&lt;section&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;select&gt;</td>
@@ -774,10 +768,10 @@
     <tr>
       <td>&lt;source&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;span&gt;</td>
@@ -789,11 +783,11 @@
     </tr>
     <tr>
       <td>&lt;strike&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;strong&gt;</td>
@@ -822,10 +816,10 @@
     <tr>
       <td>&lt;summary&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;sup&gt;</td>
@@ -849,7 +843,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;td&gt;</td>
@@ -873,7 +867,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;th&gt;</td>
@@ -889,15 +883,15 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;time&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;title&gt;</td>
@@ -918,14 +912,14 @@
     <tr>
       <td>&lt;track&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;tt&gt;</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -935,9 +929,9 @@
       <td>&lt;u&gt;</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;ul&gt;</td>
@@ -958,18 +952,18 @@
     <tr>
       <td>&lt;video&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
     <tr>
       <td>&lt;wbr&gt;</td>
       <td>Yes</td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
-      <td><span class="marked">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
+      <td><span style="color: #e80000;">No</span></td>
     </tr>
   </tbody>
 </table>
