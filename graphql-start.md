@@ -8,9 +8,9 @@ GraphQL 是基于数据的满足运行时查询的 API 查询语言，GraphQL �
 
 #### 精确描述你的数据
 
-你的数据有那些，每种数据的格式又是怎样的，都需要由 GraphQL 严格定义。
+你的数据有那些，每种数据的格式又是怎样的，都需要由 GraphQL（SDL，Schema Definition Language） 严格定义。
 
-```
+```sdl
 type Project {
   name: String
   tagline: String
