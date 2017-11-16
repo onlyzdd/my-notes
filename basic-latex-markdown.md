@@ -18,52 +18,56 @@ Latex 中的公式可以分为行内公式和行间公式两种。
 
 `^` 表示上标，`_` 表示下标。如果上下标的内容多于一个字符，要用大括号 `{}` 把这些内容括起来当做一个整体。上下标是可以嵌套的，也可以同时使用。
 
-$$ e ^ {\pi i} + 1 = 0 $$
+```$$ e ^ {\pi i} + 1 = 0 $$```
 
 另外，如果要在左右两边都有上下标，可以用 `\sideset` 命令。
 
-$$ \sideset{^1_2}{^3_4}\bigotimes $$
+```$$ \sideset{^1_2}{^3_4}\bigotimes $$```
 
 ### 分数
 
 分数的输入形式为 `\frac{numerator}{denominator}`。
 
-$$ \frac{3}{10} = 0.3 $$
+```$$ \frac{3}{10} = 0.3 $$```
 
 便捷情况可直接输入 `\frac ab` 来快速生成 $ \frac ab $。
 如果分尸很复杂，也可以使用 `numerator \over denominator` 命令。
 
-$$ {a + 1 \over b + 1} $$
+```$$ {a + 1 \over b + 1} $$```
 
 
 ### 上下划线和箭头符号
 
+```
 $$ \overline{a + b +c} $$
 $$ \underline{a + b + c} $$
 $$ \overleftarrow{a + b} $$
 $$ \underleftarrow{a + b} $$
 $$ \underleftrightarrow{a + b} $$
 $$ \vec a \cdot \vec b = 0 $$
+```
 
 ### 花括号
 
+```
 $$ \overbrace {a + b} ^ \text{a, b} $$
 $$ \{ $$
 $$ \} $$
+```
 
 ### 根号
 
 根号的输入形式为 `\sqrt[root]{arg}`，`root` 默认是 2。
 
+```
 $$ \sqrt[2]{4} $$
+```
 
 ### 输入括号和分隔符
 
 `()`、`[]`、`|` 分别表示原尺寸的形状，当需要显示大号的括号或分隔符时，要用 `\left` 和 `\right` 命令。如果你需要在不同的行显示对应括号，可以在每一行对应处使用 `\left.` 和 `\right.` 来放一个影子括号。
 
-$$ f(x, y, z) = 3y^2z \left(3 + \frac{7x + 5}{1 + y^2} \right) $$
-
-$$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
+```$$ f(x, y, z) = 3y^2z \left(3 + \frac{7x + 5}{1 + y^2} \right) $$```
 
 还有一些特殊的括号：
 
@@ -73,27 +77,27 @@ $$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 
 数学公式中常见的省略号有两种， `\ldots` 表示与文本底线对齐的省略号，`\cdots` 表示与文本中线对齐的省略号。同时 `ldot` 和 `cdot` 表示单个点的版本。
 
-$$ f(x_1, x_2, \ldots, x_n) = x_1^2 + x _2^2 + \cdots + x_n^2 $$
+```$$ f(x_1, x_2, \ldots, x_n) = x_1^2 + x _2^2 + \cdots + x_n^2 $$```
 
 ### 积分符号
 
 使用 `\int` 来输入一个积分符号。
 
-$$ \int_0^1 x^2 \, {\rm d}x $$
+```$$ \int_0^1 x^2 \, {\rm d}x $$```
 
 ### 极限符号
 
 使用 `\lim_{n \to limit}` 来输入一个极限符号。
 
-$$ \lim_{n \to +\infty} \frac{1}{n(n + 1)} $$
+```$$ \lim_{n \to +\infty} \frac{1}{n(n + 1)} $$```
 
 ### 累加、累乘运算
 
 使用 `\sum_{i=1}^n` 来输入一个累加，类似的也可以通过 `\prod`、`\bigcup`、`\bigcap` 来分别输入累乘、并集和交集。
 
-$$ \sum_{i=1}^n \frac{1}{i^2} $$
+```$$ \sum_{i=1}^n \frac{1}{i^2} $$```
 
-$$ \prod_{i=1}^n \frac{1}{i^2} $$
+```$$ \prod_{i=1}^n \frac{1}{i^2} $$```
 
 ### 输入希腊字母
 
@@ -157,7 +161,7 @@ $$ \prod_{i=1}^n \frac{1}{i^2} $$
 
 有四种宽度的空格可以使用： `\`,、`\;`、`\quad` 和 `\qquad`。
 
-$$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
+```$$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$```
 
 #### 更改文字颜色
 
@@ -171,6 +175,7 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 
 在开头使用 `begin{matrix}`，在结尾使用 `end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&`，并在每行结尾处使用 `\\`。
 
+```
 $$ 
 \begin{matrix}
 1 & x & x^2 \\
@@ -178,6 +183,7 @@ $$
 1 & z & z^2 \\
 \end{matrix}
 $$
+```
 
 ### 边框矩阵
 
@@ -189,6 +195,7 @@ $$
 
 使用 `\cdots`，`\ddots`，`\vdots` 来输入省略符号。
 
+```
 $$
 \begin{pmatrix}
 1 & a_1 & a_1^2 & \cdots & a_1^n \\
@@ -197,11 +204,13 @@ $$
 1 & a_m & a_m^2 & \cdots & a_m^n
 \end{pmatrix}
 $$
+```
 
 ### 带分割符号的矩阵
 
 `cc|c` 代表在一个三列矩阵中的第二和第三列之间插入分割线。
 
+```
 $$
 \left[
     \begin{array}{cc|c}
@@ -210,6 +219,7 @@ $$
     \end{array}
 \right]
 $$
+```
 
 ### 输入行内矩阵
 
@@ -219,6 +229,7 @@ $$
 
 使用 `begin{cases}` 来创造一组条件表达式，在每一行条件中插入 `&` 来指定需要对齐的内容，并在每一行结尾处使用 `\\`，以 `end{cases}` 结束。
 
+```
 $$
 f(n) =
 \begin{cases}
@@ -226,11 +237,13 @@ n/2,  & \text{if $n$ is even} \\
 3n+1, & \text{if $n$ is odd}
 \end{cases}
 $$
+```
 
 ### 适配行高
 
 在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[Nex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
 
+```
 $$
 f(n) = 
 \begin{cases}
@@ -238,11 +251,13 @@ f(n) =
 3n+1, & \text{if $n$ is odd}
 \end{cases}
 $$
+```
 
 ## 数组和表格
 
 数组和表格均以 `begin{array}` 开头，并在其后定义列数及每一列的文本对齐属性，`c`、`l`、`r` 分别代表居中、左对齐及右对齐。若需要插入垂直分割线，在定义式中插入 `|` ，若要插入水平分割线，在下一行输入前插入 `\hline` 。与矩阵相似，每行元素间均须要插入 `&` ，每行元素以 `\\` 结尾，最后以 `end{array}` 结束数组。 
 
+```
 $$
 \begin{array}{c|lcr}
 n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
@@ -252,11 +267,13 @@ n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
 3 & -20 & 2000 & 1+10i
 \end{array}
 $$
+```
 
 ### 输入一个方程组
 
 使用 `\begin{array}…\end{array}` 和 `\left\{…\right.` 来创建一个方程组。
 
+```
 $$
 \left\{ 
 \begin{array}{c}
@@ -266,9 +283,11 @@ a_3x+b_3y+c_3z=d_3
 \end{array}
 \right. 
 $$
+```
 
 或者使用条件表达式组 `\begin{cases}…\end{cases}` 来实现相同效果：
 
+```
 $$
 \begin{cases}
 a_1x+b_1y+c_1z=d_1 \\ 
@@ -276,6 +295,7 @@ a_2x+b_2y+c_2z=d_2 \\
 a_3x+b_3y+c_3z=d_3
 \end{cases}
 $$
+```
 
 ## 参考资料
 
