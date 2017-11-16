@@ -179,3 +179,8 @@ what are commented out
 ### 编辑器
 
 推荐使用 `VSCode + Latex Workshop`，能够提供极强的自动补全，并自动生成文档大纲，其他传统的编辑器都是可以的。
+
+### 用途
+
+- 扩展 Markdown，使用 Latex 公式
+- 编写论文，通常只需下载相应的模板，修改即可

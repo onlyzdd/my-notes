@@ -12,4 +12,9 @@
   - [HTML 文档声明](./html-doctype-declaration.md)
   - [HTML head 元素详解](./html-head-cheatsheet.md)
 
+- Latex
+  - [Latex 公式](./basic-latex-markdown.md)
+  - [Latex 文档介绍](./pro-latex-documents.md)
+
+
 持续更新中...
