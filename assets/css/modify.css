@@ -17,6 +17,6 @@ nav {
 }
 
 footer {
-    width: auto;
-    position: auto;
+    width: 130%;
+    position: unset;
 }
