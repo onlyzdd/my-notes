@@ -7,8 +7,8 @@ header p {
 }
 
 nav {
-    height: 75%;
-    overflow: scroll;
+    position: absolute;
+    top: 0;
 }
 
 footer {
