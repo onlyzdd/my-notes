@@ -12,5 +12,6 @@ header p {
 }
 
 section {
-    width: 780px;
+    width: 780px !important;
+    max-width: 780px !important;
 }
