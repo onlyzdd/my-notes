@@ -10,16 +10,13 @@
         crossorigin="anonymous"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
-            extensions: ["tex2jax.js"],
-            jax: ["input/TeX", "output/HTML-CSS"],
             tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                processEscapes: true
-            },
-        "HTML-CSS": { availableFonts: ["TeX"] }
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            }
+          })
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js'?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script src="{{ '/assets/js/MathJax.js?config=default' | relative_url }}" type="text/javascript"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
