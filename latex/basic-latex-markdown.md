@@ -71,7 +71,7 @@ $$ \sqrt[2]{4} $$
 
 还有一些特殊的括号：
 
-![特殊的括号](./images/basic-latex-markdown/braces.png)
+![特殊的括号](../images/basic-latex-markdown/braces.png)
 
 ### 省略号
 
@@ -103,53 +103,53 @@ $$ \sqrt[2]{4} $$
 
 输入 `\fullname` 和 `\CapFullName` 来分别输入小写和大写希腊字母。对于大写希腊字母与现有字母相同的，直接输入大写字母即可。
 
-![希腊字母输入对照表](./images/basic-latex-markdown/latin-chars.png)
+![希腊字母输入对照表](../images/basic-latex-markdown/latin-chars.png)
 
 部分字母有变量专用形式，以 `\var` 开头。
 
-![变量专用形式](./images/basic-latex-markdown/special-vars.png)
+![变量专用形式](../images/basic-latex-markdown/special-vars.png)
 
 ### 关系运算符
 
-![关系运算符](./images/basic-latex-markdown/relation-operator.png)
+![关系运算符](../images/basic-latex-markdown/relation-operator.png)
 
 ### 集合运算符
 
-![集合运算符](./images/basic-latex-markdown/set-operator.png)
+![集合运算符](../images/basic-latex-markdown/set-operator.png)
 
 ### 对数运算符
 
-![对数运算符](./images/basic-latex-markdown/log-operator.png)
+![对数运算符](../images/basic-latex-markdown/log-operator.png)
 
 ### 三角运算符
 
-![三角运算符](./images/basic-latex-markdown/triangle-operator.png)
+![三角运算符](../images/basic-latex-markdown/triangle-operator.png)
 
 ### 微积分运算符
 
-![微积分运算符](./images/basic-latex-markdown/calculus-operator.png)
+![微积分运算符](../images/basic-latex-markdown/calculus-operator.png)
 
 ### 逻辑运算符
 
-![逻辑运算符](./images/basic-latex-markdown/logical-operator.png)
+![逻辑运算符](../images/basic-latex-markdown/logical-operator.png)
 
 ### 戴帽符号
 
-![戴帽符号](./images/basic-latex-markdown/hat-operator.png)
+![戴帽符号](../images/basic-latex-markdown/hat-operator.png)
 
 ### 连线符号
 
-![连线符号](./images/basic-latex-markdown/line-operator.png)
+![连线符号](../images/basic-latex-markdown/line-operator.png)
 
 ### 箭头符号
 
-![箭头符号](./images/basic-latex-markdown/arrow-operator.png)
+![箭头符号](../images/basic-latex-markdown/arrow-operator.png)
 
 ### 字体转换
 
 若要对公式的某一部分字符进行字体转换，可以使用 `{\fontname {chars}}` 来进行转换。一般情况下，默认为意大利体，即斜体。
 
-![字体修改对照](./images/basic-latex-markdown/font.png)
+![字体修改对照](../images/basic-latex-markdown/font.png)
 
 ### 其他命令
 
@@ -189,7 +189,7 @@ $$
 
 在开头和结尾将 `matrix` 替换为 `pmatrix`、`bmatrix`、`Bmatrix`、`vmatrix` 和 `Vmatrix`。
 
-![边框矩阵](./images/basic-latex-markdown/matrix.png)
+![边框矩阵](../images/basic-latex-markdown/matrix.png)
 
 ### 输入带省略号的矩阵
 

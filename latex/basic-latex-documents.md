@@ -1,18 +1,18 @@
-# Latex 文档
+# LaTeX 文档
 
-## 到底什么是 Latex？
+## 到底什么是 LaTeX？
 
-最基本的 Tex 程序可以完成简单的排版操作和程序设计功能，Leslie Lamport 开发的 Latex 是构建与 Tex 上，使用最为广泛的 Tex 格式，使得使用者可以在短时间内生成高质量的文档。对于生成复杂的数学公式，Latex 表现地更为出色。
+最基本的 Tex 程序可以完成简单的排版操作和程序设计功能，Leslie Lamport 开发的 LaTeX 是构建与 Tex 上，使用最为广泛的 Tex 格式，使得使用者可以在短时间内生成高质量的文档。对于生成复杂的数学公式，LaTeX 表现地更为出色。
 
-Latex 是一种标记语言，经过处理可以生成多样的高质量文档，处理软件包括 TeXLive（推荐）、MiKTeX、CTeX 等。
+LaTeX 是一种标记语言，经过处理可以生成多样的高质量文档，处理软件包括 TeXLive（推荐）、MiKTeX、CTeX 等。
 
 ## 源文档
 
-Latex 源文件是简单的文本文件，可以使用任何的编辑器来创建，推荐编码为 UTF8。
+LaTeX 源文件是简单的文本文件，可以使用任何的编辑器来创建，推荐编码为 UTF8。
 
 ### 文档类
 
-Latex 源文件中通过 `\documentclass` 声明文档类，其中 `{}` 表示文档类参数（不可省略），`[]` 表示文档选项。`\begin{document}` 和 `\end{document}` 声明一个 document 环境，其间即是需要排版的内容。`\documentclass` 和 `\begin{document}` 之间为导言区，通常保存一些方便的全局配置，这些配置被称为**宏包**。
+LaTeX 源文件中通过 `\documentclass` 声明文档类，其中 `{}` 表示文档类参数（不可省略），`[]` 表示文档选项。`\begin{document}` 和 `\end{document}` 声明一个 document 环境，其间即是需要排版的内容。`\documentclass` 和 `\begin{document}` 之间为导言区，通常保存一些方便的全局配置，这些配置被称为**宏包**。
 
 以
 
@@ -106,17 +106,17 @@ what are commented out
 
 编译是通过执行命令进行的，键入 `latex foo.tex` 回车，将会调用 latex 引擎编译 `foo.tex` 为 `foo.dvi`，接下来通过 `dvips foo.dvi && ps2pdf foo.ps` 就可以产生 PDF 文档。
 
-编译殷勤有很多中，另外还有 `PDFLatex`、`XeLatex` 等工具将直接输出 PDF 文档，而不是用转换工具。对于中文文档而言，使用 `XeLatex`，其较好地提供了对中文的支持。例如：`xelatex foo`，将会自动寻找名为 `foo.tex` 的源文件进行编译。
+编译殷勤有很多中，另外还有 `PDFLaTeX`、`XeLaTeX` 等工具将直接输出 PDF 文档，而不是用转换工具。对于中文文档而言，使用 `XeLaTeX`，其较好地提供了对中文的支持。例如：`xelatex foo`，将会自动寻找名为 `foo.tex` 的源文件进行编译。
 
 ## 扩展名及介绍
 
-当你拿到一个 Latex 模板时，在编译之后会得到非常多的文件，下面对这些文件及其作用进行简单的介绍。
+当你拿到一个 LaTeX 模板时，在编译之后会得到非常多的文件，下面对这些文件及其作用进行简单的介绍。
 
 | 扩展名 | 描述 |
 | :--- | :--- |
 | .tex | Tex 源文件 |
-| .sty | Latex 样式文件，使用 `\usepackage` 命令导入 |
-| .dtx | Documented Tex，Latex `.sty` 文档的分发形式 |
+| .sty | LaTeX 样式文件，使用 `\usepackage` 命令导入 |
+| .dtx | Documented Tex，LaTeX `.sty` 文档的分发形式 |
 | .ins | `.dtx` 的安装文件，`latex foo.ins` 会生成所需的 `.sty` 文档和帮助手册 |
 | .cls | 类文档，使用 `\documentclass` 命令导入 |
 | .fd | 字体描述文档 |
@@ -163,7 +163,7 @@ what are commented out
 
 安装推荐使用 TexLive，其在各个平台都有发布版本，而且自动安装了非常多的宏包，使用起来更加方便。
 
-编译器推荐使用 XeLatex，其很好地提供了对中文的支持，此外 CTex、CJK 的方式也是可行的。
+编译器推荐使用 XeLaTeX，其很好地提供了对中文的支持，此外 CTeX、CJK 的方式也是可行的。
 
 ### 大型文档
 
@@ -178,9 +178,9 @@ what are commented out
 
 ### 编辑器
 
-推荐使用 `VSCode + Latex Workshop`，能够提供极强的自动补全，并自动生成文档大纲，其他传统的编辑器都是可以的。
+推荐使用 `VSCode + LaTeX Workshop`，能够提供极强的自动补全，并自动生成文档大纲，其他传统的编辑器都是可以的。
 
 ### 用途
 
-- 扩展 Markdown，使用 Latex 公式
+- 扩展 Markdown，使用 LaTeX 公式
 - 编写论文，通常只需下载相应的模板，修改即可
