@@ -7,8 +7,10 @@ header p {
 }
 
 nav {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: unset;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 }
 
 footer {
