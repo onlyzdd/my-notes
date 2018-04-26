@@ -7,8 +7,8 @@ header p {
 }
 
 section {
-    width: 780px;
-    max-width: 780px;
+    width: 650px;
+    max-width: 650px;
 }
 
 nav {
@@ -17,6 +17,7 @@ nav {
 }
 
 footer {
-    width: 130%;
+    width: 110%;
     position: unset;
+    margin-left: 0;
 }
