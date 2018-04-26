@@ -1,7 +1,7 @@
 ___
 ___
 
-@import "jekyll-theme-leap-day";
+@import "{{ theme }}";
 
 header p {
     display: block;
@@ -23,5 +23,5 @@ nav {
 
 footer {
     width: auto;
-    position: autoß;
+    position: auto;
 }
