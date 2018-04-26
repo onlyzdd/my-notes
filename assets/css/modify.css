@@ -6,11 +6,6 @@ header p {
     display: none;
 }
 
-section {
-    width: 650px;
-    max-width: 650px;
-}
-
 nav {
     height: 75%;
     overflow: scroll;
