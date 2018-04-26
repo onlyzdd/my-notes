@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="{{ '/assets/css/modify.css' | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
         crossorigin="anonymous"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js'?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
@@ -59,11 +71,6 @@
                 <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
             </p>
             {% endif %}
-            <p>
-                <small>Hosted on GitHub Pages &mdash; Theme by
-                    <a href="https://twitter.com/michigangraham">mattgraham</a>
-                </small>
-            </p>
         </footer>
     </div>
 
