@@ -1,0 +1,16 @@
+___
+___
+
+@import "{{ site.theme }}"
+
+header p {
+    display: block;
+}
+
+#banner {
+    display: none;
+}
+
+section {
+    width: 780px;
+}
