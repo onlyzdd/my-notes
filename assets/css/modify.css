@@ -9,7 +9,9 @@ header p {
 nav {
     position: fixed;
     top: unset;
+    width: 300px;
     max-height: calc(100vh - 200px);
+    margin-left: -640px;
     overflow-y: auto;
 }
 
@@ -21,6 +23,10 @@ footer {
     width: 100%;
     position: unset;
     margin-left: 0;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +44,20 @@ footer {
     background-color: rgba(50, 50, 50, .1);
 }
 
-li.active {
+li.active a {
     color: #ff0000;
+}
+
+.tag-h1 a {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.tag-h2 a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tag-h3 a {
+    font-size: 14px;
 }
