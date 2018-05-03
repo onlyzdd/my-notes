@@ -17,6 +17,7 @@
 
 - CSS
   - [CSS 动画](./css/css-animate.md)
+  - [CSS Flexbox 布局](./css/flexbox-layout.md)
 
 - Latex
   - [Latex 公式](./latex/basic-latex-markdown.md)
@@ -24,5 +25,8 @@
 
 - API
   - [了解 GraphQL](./api/graphql-start.md)
+
+- 其他
+  - [重新认识QRCode](./others/introduction-to-qrcode.md)
 
 持续更新中...
