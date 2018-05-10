@@ -36,7 +36,7 @@ QRCode是为机器设计的，对于人来说，并不能轻易地读出QRCode�
 
 ## QRCode由哪些部分组成？
 
-![QRCode Sections](../images/introduction-to-qrcode/qrcode-sections.png)
+![QRCode Sections](./introduction-to-qrcode/qrcode-sections.png)
 
 QRCode包括以下8个部分：
 
@@ -71,7 +71,7 @@ QRCode的错误纠正决定了在怎样的损失之下，QRCode依旧是能够�
 
 QRCode中的错误纠正是采用的**里德所罗门纠错算法**（RS码）。如下图所示，QRCode中有一块位置用来标记所采用的错误纠正级别。
 
-![Error Correction](../images/introduction-to-qrcode/error-correction.png)
+![Error Correction](./introduction-to-qrcode/error-correction.png)
 
 ## 参考链接
 
