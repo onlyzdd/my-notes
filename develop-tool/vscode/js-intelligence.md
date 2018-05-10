@@ -94,7 +94,7 @@ function showAge(p) {
 对于一些特别的文件，它们有着比较特别的文件扩展名，但内容上很大和HTML、CSS、JS等有着非常相似的语法结构。对于单个文件，可以修改文件的语言模式，对于同类文件，则可以设置文件关联，以提供相类似的智能提示。
 
 ```json
-// .vscode/setting.json
+//.vscode/setting.json
 {
     "files.associations": {
         "*.wxml": "html",

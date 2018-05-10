@@ -31,6 +31,7 @@
     - [npm script 使用指南](./languages/npm/npm-scripts-guides.md)
 
 - 其他
+  - [重新认识JSON](./know-it/introduction-to-json.md)
   - [重新认识QRCode](./know-it/introduction-to-qrcode.md)
   - [了解 GraphQL](./know-it/graphql-start.md)
 
