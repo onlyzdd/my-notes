@@ -34,6 +34,7 @@
   - [重新认识JSON](./know-it/introduction-to-json.md)
   - [重新认识QRCode](./know-it/introduction-to-qrcode.md)
   - [了解 GraphQL](./know-it/graphql-start.md)
+  - [SSH基本原理及应用](./know-it/introduction-to-ssh.md)
 
 
 持续更新中...
