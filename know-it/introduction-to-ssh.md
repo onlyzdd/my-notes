@@ -87,6 +87,14 @@ $ ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.p
 
 > 小技巧
 
+当我们通过SSH在远程主机上执行比较耗时的命令行任务时，无操作的情况下在程序运行结束前就会发现，我们连接的窗口失去了连接。对此，可以配置本地主机文件`$HOME/.ssh/config`，以每隔一定的时间就向远程主机发包，以保持连接，在上面的文件中写入：
+
+```
+# send no-op package every 60s to keep connection alive
+Host *
+    ServerAliveInterval 60
+```
+
 每次在进行SSH连接时，都输入用户名、主机和端口好很麻烦，这时可以配置本地主机文件`$HOME/.ssh/config`（如果没有就创建），写入或追加：
 
 ```
