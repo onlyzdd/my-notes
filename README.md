@@ -35,6 +35,6 @@
   - [重新认识QRCode](./know-it/introduction-to-qrcode.md)
   - [了解 GraphQL](./know-it/graphql-start.md)
   - [SSH基本原理及应用](./know-it/introduction-to-ssh.md)
+  - [让你的Bash飞起来](./know-it/bash-fly.md)
 
-
-持续更新中...
+本笔记已部署在[https://d2zhang.github.io/my-notes/](https://d2zhang.github.io/my-notes/)，持续更新中...
