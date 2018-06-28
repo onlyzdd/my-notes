@@ -1,4 +1,4 @@
-# 让你的 Bash 飞起来
+# 常用的 Bash 命令
 
 ## Bash 快捷键（Mac 版）
 
@@ -65,6 +65,27 @@ $ cat -s file.txt # 删除输出中多余的空白行，连续的空白行只显
 $ cat -n file.txt # 在每一行输出前加上行号，可以通过 -b 选项取消对空白行的编号
 ```
 
+### `cd` 命令
+
+`cd` 命令用来切换工作目录（change directory），也写作 `chdir`。
+
+```bash
+$ cd / # 切换到系统根目录
+$ cd ~ # 切换到当前用户主目录，效果同 `~`、`cd`
+$ chdir .. # 切换到上一级目录，可以连续使用
+$ cd - # 切换到进入当前目录之前所在的目录，效果同 `-`
+```
+
+### `cp` 命令
+
+`cp` 命令用来复制文件或目录，意为 Copy。
+
+```bash
+$ cp 1.txt 2.txt # 复制 1.txt 到 2.txt
+$ cp 1.txt test # 复制 1.txt 到 test 目录下，使用 -i 进行交互式覆盖
+$ cp -a test1 test2 # 复制整个目录
+```
+
 ### `find` 命令
 
 `find` 命令沿着文件层次结构向下遍历，匹配符合条件的文件，执行相应的操作。
@@ -85,47 +106,62 @@ $ find . -type f -user root -exec chown user {} # -exec 用于执行命令，{} 
 $ find . \(-name ".git" -prune\) # prune 选项将某些文件或目录从搜索过程中排除，这叫做修剪
 ```
 
-### `xargs` 命令
+### `mkdir` 命令
 
-有些命令只能以命令行参数的形式接受数据，而无法通过 stdin 接受数据流，这时就没法用管道来提供那些只有通过命令行参数才能提供的数据。`xargs` 命令就是为了解决这个问题的，它擅长将标准输入数据转换成命令行参数。
-
-`xargs` 命令应紧跟在管道符之后，以标准输入作为主要的源数据流，并以此提供命令行参数来执行其他命令。
+`mkdir` 命令用来创建目录（Make Directory），如果文件夹已存在，则不会创建成功。
 
 ```bash
-$ cat example.txt # 样例文件
-1 2 3 4 5 6
-7 8 9 10
-11 12
-$ cat example.txt | xargs 
-1 2 3 4 5 6 7 8 9 10 11 12
-$ cat example.txt | xargs -n 3 # 每行保存最多 3 个参数
-1 2 3
-4 5 6 
-7 8 9
-10 11 12
-$ echo splitXsplitXsplitXsplit | xargs -d X # d 选项进行分割，在 MacOS 上需要使用 I 选项
-$ find . -type f -name "*.txt" -print0 | xargs -0 rm -f # 删除当前目录下所有的 .txt 文件
-$ find . -type f -name "*.c" -print0 | xargs -0 wc -l # 统计所有 C 程序文件的行数
+$ mkdir a # 创建目录
+$ mkdir c d # 同时创建多个目录
+$ mkdir -p b/bb # 递归创建多个目录
+$ mkdir -p a # 如果目录 a 不存在，则创建目录 a
+$ mkdir -m 777 e # 创建权限为 777 的目录 a
+$ mkdir -v f # 创建目录时输出信息
+$ mkdir -vp scf/{lib/,bin/,doc/{info,product},logs/{info,product},service/deploy/{info,product}} # 创建一个项目目录
 ```
 
-### `tr` 命令
+### `mv` 命令
 
-`tr` 命令可以对来自标准输入的内容进行字符替换、字符删除以及重复字符压缩，也叫做转换（translate）命令。
-
-`tr` 命令只能通过标准输入，而无法通过命令行参数来接受输入，调用格式如下：
+`mv` 命令用来对文件或目录进行移动或重命名，表示 Move。
 
 ```bash
-$ tr [options] set1 set2 # 将来自标准输入的字符从 set1 映射到 set2
-$ echo HELLO WHO IS THIS | tr "A-Z" "a-z" # hello who is this
-$ echo tr came, tr saw, tr conquered. | tr 'a-zA-Z' 'n-za-mN-ZA-M' # ROT13 加密
-$ echo ge pnzr, ge fnj, ge pbadhrerq. | tr 'a-zA-Z' 'n-za-mN-ZA-M' # ROT13 解密
-$ tr -d '1-3' < example.txt # 使用 d 选项删除指定的字符
-   4 5 6
-7 8 9 0
-$ echo hello 1 char 2 next 4 | tr -d -c '0-9 \n' # 使用 c 选项指定使用字符集的补集
- 1  2  4
-$ echo "GNU is     not     UNIX. Recursive    right  ?" | tr -s ' ' # 使用 s 选项压缩重复的字符
-GNU is not UNIX. Recursive right ?
+$ mv test.txt test.log # 将 test.txt 重命名为 test.log
+$ mv test.log logs # 将 test.log 移动到 logs 目录中，logs 目录必须事先存在
+$ mv -t ~/logs 1.log 2.log # 使用 -t 指定移动的目标目录，用来移动多个文件
+$ mv -i 1.txt 2.txt # 如果 2.txt 存在，询问是否覆盖
+$ mv -f 1.txt 2.txt # 直接用 1.txt 覆盖 2.txt
+```
+
+### `nl` 命令
+
+
+
+### `pwd` 命令
+
+`pwd` 意为 Print Working Directory，该命令用来输出工作目录路径。
+
+```bash
+$ pwd # 输出当前工作目录的完整路径
+$ pwd -P # 如果目录是链接时，输出实际路径
+```
+
+### `rm` 命令
+
+`rm` 命令用于删除文件和目录，是一个较为危险的命令，很多人在用此命令时通常会添加别名，并通过 `mv` 命令备份删除的文件，防止误删。
+
+```bash
+$ rm a.txt # 删除 a.txt 文件
+$ rm -f a.txt # 强制删除，不询问
+$ rm -r dir_a # 删除目录 dir_a，并递归删除其下的所有目录和文件
+$ rm -i *.log # 交互式删除当前目录下的所有 .log 文件
+$ rm -- -file # 删除 -file 文件
+```
+
+### `sed` 命令
+
+```bash
+$ sed -n '10p' file.txt # 查看 file.txt 第 10 行
+$ sed -n '3,5p' file.txt # 查看 file.txt 第 3-5 行
 ```
 
 ### `sort` 命令
@@ -180,3 +216,53 @@ $ tar -acvf output.tar.gz file1 file2 folder1 # 根据扩展名自动压缩归�
 $ tar -cf output.tar * --exclude "*.txt" # 排除部分文件的归档
 ```
 
+### `touch` 命令
+
+`touch` 命令用来新建一个文件或修改文件的时间戳。
+
+```bash
+$ touch 1.txt # 创建新文件 1.txt
+```
+
+### `tr` 命令
+
+`tr` 命令可以对来自标准输入的内容进行字符替换、字符删除以及重复字符压缩，也叫做转换（translate）命令。
+
+`tr` 命令只能通过标准输入，而无法通过命令行参数来接受输入，调用格式如下：
+
+```bash
+$ tr [options] set1 set2 # 将来自标准输入的字符从 set1 映射到 set2
+$ echo HELLO WHO IS THIS | tr "A-Z" "a-z" # hello who is this
+$ echo tr came, tr saw, tr conquered. | tr 'a-zA-Z' 'n-za-mN-ZA-M' # ROT13 加密
+$ echo ge pnzr, ge fnj, ge pbadhrerq. | tr 'a-zA-Z' 'n-za-mN-ZA-M' # ROT13 解密
+$ tr -d '1-3' < example.txt # 使用 d 选项删除指定的字符
+   4 5 6
+7 8 9 0
+$ echo hello 1 char 2 next 4 | tr -d -c '0-9 \n' # 使用 c 选项指定使用字符集的补集
+ 1  2  4
+$ echo "GNU is     not     UNIX. Recursive    right  ?" | tr -s ' ' # 使用 s 选项压缩重复的字符
+GNU is not UNIX. Recursive right ?
+```
+
+### `xargs` 命令
+
+有些命令只能以命令行参数的形式接受数据，而无法通过 stdin 接受数据流，这时就没法用管道来提供那些只有通过命令行参数才能提供的数据。`xargs` 命令就是为了解决这个问题的，它擅长将标准输入数据转换成命令行参数。
+
+`xargs` 命令应紧跟在管道符之后，以标准输入作为主要的源数据流，并以此提供命令行参数来执行其他命令。
+
+```bash
+$ cat example.txt # 样例文件
+1 2 3 4 5 6
+7 8 9 10
+11 12
+$ cat example.txt | xargs 
+1 2 3 4 5 6 7 8 9 10 11 12
+$ cat example.txt | xargs -n 3 # 每行保存最多 3 个参数
+1 2 3
+4 5 6 
+7 8 9
+10 11 12
+$ echo splitXsplitXsplitXsplit | xargs -d X # d 选项进行分割，在 MacOS 上需要使用 I 选项
+$ find . -type f -name "*.txt" -print0 | xargs -0 rm -f # 删除当前目录下所有的 .txt 文件
+$ find . -type f -name "*.c" -print0 | xargs -0 wc -l # 统计所有 C 程序文件的行数
+```

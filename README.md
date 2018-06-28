@@ -34,8 +34,9 @@
   - [重新认识JSON](./know-it/introduction-to-json.md)
   - [重新认识QRCode](./know-it/introduction-to-qrcode.md)
   - [了解 GraphQL](./know-it/graphql-start.md)
-  - [SSH基本原理及应用](./know-it/introduction-to-ssh.md)
-  - [让你的Bash飞起来](./know-it/bash-fly.md)
+  - [SSH 基本原理及应用](./know-it/introduction-to-ssh.md)
+  - [常用的 Bash 命令](./know-it/bash-commands.md)
+  - [让你的 Bash 飞起来](./know-it/master-bash.md)
   - [Awk 和 Sed](./know-it/awk-sed.md)
   - [PyQt5：跨平台开发方案](./know-it/PyQt5.md)
 
