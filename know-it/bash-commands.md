@@ -106,6 +106,10 @@ $ find . -type f -user root -exec chown user {} # -exec 用于执行命令，{} 
 $ find . \(-name ".git" -prune\) # prune 选项将某些文件或目录从搜索过程中排除，这叫做修剪
 ```
 
+### `less` 命令
+
+
+
 ### `mkdir` 命令
 
 `mkdir` 命令用来创建目录（Make Directory），如果文件夹已存在，则不会创建成功。
@@ -118,6 +122,16 @@ $ mkdir -p a # 如果目录 a 不存在，则创建目录 a
 $ mkdir -m 777 e # 创建权限为 777 的目录 a
 $ mkdir -v f # 创建目录时输出信息
 $ mkdir -vp scf/{lib/,bin/,doc/{info,product},logs/{info,product},service/deploy/{info,product}} # 创建一个项目目录
+```
+
+### `more` 命令
+
+`more` 命令功能类似于 `cat`，不过 `cat` 会将整个文件内容从上到下显示在屏幕上。`more` 命令在启动时就加载整个文件，并会一页一页显示以方便阅读，使用空格键显示下一页，使用 _b_ 显示上一页，而且支持字符串搜索。
+
+```bash
+$ more +3 1.txt # 显示文件中从第 3 行起的内容
+$ more +/text 1.txt # 从文件中查找第一个出现 text 字符串的行，并从该处前两行开始显示输出
+$ ls -l | more -5 # 设定每屏显示的行数为 5 来显示当前目录下的所有文件
 ```
 
 ### `mv` 命令
@@ -134,7 +148,12 @@ $ mv -f 1.txt 2.txt # 直接用 1.txt 覆盖 2.txt
 
 ### `nl` 命令
 
+`nl` 命令用来计算文件中的行数，相对于 `cat -n`，`nl` 命令可以做更多的显示设计。
 
+```bash
+$ nl test.txt # 同 `cat -n text.txt`
+$ nl -v 0 test.txt # -v 指定行号从 0 开始
+```
 
 ### `pwd` 命令
 
