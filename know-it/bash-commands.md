@@ -1,5 +1,7 @@
 # 常用的 Bash 命令
 
+Bash 是许多 Linux 发行版中默认的 Shell，本文档介绍 Bash 中常用的命令，掌握这些命令在 Linux 的使用中十分重要。注意，本文档的绝大多数案例仅在 MacOS（GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)，Copyright (C) 2007 Free Software Foundation, Inc.）中测试通过。
+
 ### `cal` 命令
 
 `cal` 命令用来显示日历。
