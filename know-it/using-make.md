@@ -54,8 +54,6 @@ clean:
 
 ```
 .PHONY: clean
-clean:
-    rm *.o
 ```
 
 ### 前置条件

@@ -39,5 +39,6 @@
   - [让你的 Bash 飞起来](./know-it/master-bash.md)
   - [Awk 和 Sed](./know-it/awk-sed.md)
   - [PyQt5：跨平台开发方案](./know-it/PyQt5.md)
+  - [使用 Make](./know-it/using-make.md)
 
 本笔记已部署在[https://d2zhang.github.io/my-notes/](https://d2zhang.github.io/my-notes/)，持续更新中...
