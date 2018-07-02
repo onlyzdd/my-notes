@@ -25,7 +25,7 @@ $ make clean # 构建 Makefile 文件中的 clean 目标
 
 _Makefile_ 文件由一系列规则构成，规则的形式如下：
 
-```makefile
+```
 <target>: <prerequisites>
     <commands>
 ```
@@ -38,21 +38,21 @@ _Makefile_ 文件由一系列规则构成，规则的形式如下：
 
 目标通常是文件名，指明 _Make_ 所要构建的对象。目标可以是多个文件名，之间用空格分隔。例如：
 
-```makefile
+```
 a.txt: b.txt c.txt
     cat b.txt c.txt > a.txt
 ```
 
 除了文件名，目标还可以是某个操作的名字，这称为“伪目标”（phony target）。例如：
 
-```makefile
+```
 clean:
     rm *.o
 ```
 
 但是如果当前目录中存在一个名为 _clean_ 的文件，那么 `make clean` 就不会执行了。这是因为 _Make_ 发现 _clean_ 文件已存在，不会尝试去构建。为了避免这种情况，可以明确声明 `clean` 是一个伪目标，这样 _Make_ 就不会去检查 _clean_ 文件了。
 
-```makefile
+```
 .PHONY: clean
 clean:
     rm *.o
@@ -68,7 +68,7 @@ clean:
 
 命令由一行或多行的 Shell 命令组成，它是构建目标的具体指令，它的运行结果通常就是生成目标文件。每行命令前，都必须有一个 Tab 或 4 个空格，这可以用内置变量 `.RECIPEPREFIX` 声明（此内置变量仅在 3.8.2 版本后可用）：
 
-```makefile
+```
 .RECIPEPREFIX = >
 all:
 > echo Hello, world
@@ -90,7 +90,7 @@ all:
 
 正常情况下，_Make_ 会打印每条命令，然后再执行，打印命令的过程就叫做回声。在命令的前面加上 `@`，可以关闭该命令的回声。
 
-```makefile
+```
 test:
     @echo This is a echo!
 ```
@@ -121,7 +121,7 @@ _Make_ 使用 Bash 语法，完成判断和循环。
 
 _Make_ 支持使用函数，调用方法如下：
 
-```makefile
+```
 $(function args)
 # 或者
 ${function args}
