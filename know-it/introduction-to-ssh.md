@@ -85,9 +85,11 @@ $ ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.p
 - `"$ mkdir -p .ssh"`的作用是，如果用户主目录中的`.ssh`目录不存在，就创建一个；
 - `'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`的作用是，将本地的公钥文件`~/.ssh/id_rsa.pub`，重定向追加到远程文件`authorized_keys`的末尾。
 
+如果在执行此命令之后仍然无法免密登录，其原因可以通过 `ssh -v user@host` 进行调试查看。很多情况是远程文件的权限错误，可以尝试 `chmod 700 .ssh && chmod 600 .ssh/authorized_keys`。
+
 > 小技巧
 
-当我们通过SSH在远程主机上执行比较耗时的命令行任务时，无操作的情况下在程序运行结束前就会发现，我们连接的窗口失去了连接。对此，可以配置本地主机文件`$HOME/.ssh/config`，以每隔一定的时间就向远程主机发包，以保持连接，在上面的文件中写入：
+当我们通过SSH在远程主机上执行比较耗时的命令行任务时，无操作的情况下在程序运行结束前就会发现，我们连接的窗口失去了连接。事实上，这种网络超时的原理非常复杂，而且很多情况下服务器和本地都可以对此进行设置，所以没有万能的解决方法。一般地，可以配置本地主机文件`$HOME/.ssh/config`，以每隔一定的时间就向远程主机发包，以保持连接，在上面的文件中写入：
 
 ```
 # send no-op package every 60s to keep connection alive
