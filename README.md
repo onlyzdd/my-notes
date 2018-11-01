@@ -40,6 +40,7 @@
   - [Awk 和 Sed](./know-it/awk-sed.md)
   - [PyQt5：跨平台开发方案](./know-it/PyQt5.md)
   - [使用 Make](./know-it/using-make.md)
+  - [Python 绘图库 Matplotlib 入门](./know-it/matplotlib.md)
   - [推荐阅读](./addition/recommend.md)
 
 本笔记已部署在[https://d2zhang.github.io/my-notes/](https://d2zhang.github.io/my-notes/)，持续更新中...
