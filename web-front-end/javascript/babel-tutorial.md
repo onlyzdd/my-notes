@@ -36,7 +36,7 @@ $ npm i babel-polyfill
 $ npm i babel-cli babel-preset-env babel-polyfill
 ```
 
-接着创建一个 `.babel` 文件（也可以使用 `package.json`），并添加:
+接着创建一个 `.babelrc` 文件（也可以使用 `package.json`），并添加:
 
 ```json
 {

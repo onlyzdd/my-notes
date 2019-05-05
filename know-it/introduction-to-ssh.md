@@ -97,7 +97,7 @@ Host *
     ServerAliveInterval 60
 ```
 
-每次在进行SSH连接时，都输入用户名、主机和端口好很麻烦，这时可以配置本地主机文件`$HOME/.ssh/config`（如果没有就创建），写入或追加：
+每次在进行SSH连接时，都输入用户名、主机和端口号很麻烦，这时可以配置本地主机文件`$HOME/.ssh/config`（如果没有就创建），写入或追加：
 
 ```
 Host baidu
