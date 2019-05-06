@@ -10,6 +10,7 @@
     - [Latex 文档介绍](./develop-tool/latex/basic-latex-documents.md)
   - VSCode：卓越的代码编辑器和开发工具
     - [VSCode中的JavaScript Intelligence](./develop-tool/vscode/js-intelligence.md)
+    - [VSCode 重新定义远程开发](./develop-tool/vscode/remote-development.md)
 
 - Web前端开发
   - HTML：超文本标记语言
@@ -43,4 +44,4 @@
   - [Python 绘图库 Matplotlib 入门](./know-it/matplotlib.md)
   - [推荐阅读](./addition/recommend.md)
 
-本笔记已部署在[https://d2zhang.github.io/my-notes/](https://d2zhang.github.io/my-notes/)，持续更新中...
+本笔记已部署在[https://onlyzdd.github.io/my-notes/](https://onlyzdd.github.io/my-notes/)，持续更新中...

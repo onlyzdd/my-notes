@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/d2zhang/my-notes.git"
+    "url": "git+https://github.com/onlyzdd/my-notes.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/d2zhang/my-notes/issues"
+    "url": "https://github.com/onlyzdd/my-notes/issues"
   },
-  "homepage": "https://github.com/d2zhang/my-notes#readme"
+  "homepage": "https://github.com/onlyzdd/my-notes#readme"
 }
