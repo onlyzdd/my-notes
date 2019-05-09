@@ -61,3 +61,7 @@ li.active a {
 .tag-h3 a {
     font-size: 14px;
 }
+
+menu, ul, ol {
+    padding-left: 10px;
+}
