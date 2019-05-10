@@ -31,7 +31,7 @@ Latex 中的公式可以分为行内公式和行间公式两种。
 ```$$ \frac{3}{10} = 0.3 $$```
 
 便捷情况可直接输入 `\frac ab` 来快速生成 $ \frac ab $。
-如果分尸很复杂，也可以使用 `numerator \over denominator` 命令。
+如果分式很复杂，也可以使用 `numerator \over denominator` 命令。
 
 ```$$ {a + 1 \over b + 1} $$```
 
