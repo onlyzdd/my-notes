@@ -2,7 +2,7 @@
 
 近日，[VS Code 团队发布了远程开发套件](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)（Remote Development Extension Pack），主要包含 3 个扩展，分别支持**容器**、**远程机器**以及 **Windows 的 Linux 子系统**上的远程开发。
 
-在体验了一把 VS Code 远程开发套件之后，简直被感动到不要不要的，堪称卓越，这才是我真正想要的解决方案呀！目前远程开发扩展已在 **VS Code Insiders** 版本中可用，对 Stable 版本的支持会在将来发布。以下的 VS Code 均指 Insiders 版本。
+在体验了一把 VS Code 远程开发套件之后，简直被感动到不要不要的，堪称卓越，这才是我真正想要的解决方案呀！VS Code Stable 和 VS Code Insiders 均已支持此扩展。
 
 ## 远程开发之痛
 
@@ -35,7 +35,7 @@ VS Code 远程开发套件在本地和远程都运行着 VS Code 的实例，保
 
 1. 本机：
    - MacBook Pro: MacOS v10.14
-   - VS Code: v1.34.0
+   - VS Code: v1.38.0
    - Remote Development Extension Pack: v0.12.0
 2. 远程主机
    - Name: gpu
@@ -51,9 +51,7 @@ VS Code 远程开发套件在本地和远程都运行着 VS Code 的实例，保
 ```
 Host gpu
     Hostname 172.168.1.16
-    Port 22
     User zhangdd
-    IdentityFile ~/.ssh/id_rsa
 ```
 
 ### 连接
