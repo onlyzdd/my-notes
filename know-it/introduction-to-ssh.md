@@ -121,3 +121,23 @@ $ ssh -L 8080:localhost:8888 user@host
 ```
 
 它表示将本地主机的`8080`端口绑定到`host`主机的`8888`端口，这样访问本地主机的`8080`端口就相当于访问远程主机的`8888`端口了，这种方式又被称为SSH隧道。
+
+## SSH 其他命令
+
+### `scp` 命令
+
+`scp` 命令是基于 SSH 传输协议的远程文件、目录拷贝命令，与 `rsync` 功能类似。
+
+```sh
+$ scp local_file liyanhong@baidu.com:~ # 将本地文件拷贝到远程
+$ scp -P 43210 -r liyanhong@baidu.com:~/some_directory . # 将远程文件夹拷贝到本地
+```
+
+### `sshfs` 命令
+
+`sshfs` 命令是基于 SSH 传输协议的文件系统，可以将远程目录或文件挂载到本地。
+
+```bash
+$ sshfs liyanhong@baidu.com:~ baidu # 将远程目录挂载到本地目录
+$ umount baidu # 卸载共享目录
+```
