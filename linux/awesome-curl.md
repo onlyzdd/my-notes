@@ -63,5 +63,3 @@ $ curl --header "Content-Type: application/json" [URL] # 修改请求头并访�
 $ curl --proxy socks5://127.0.0.1:1086 [URL] # 以代理方式访问
 $ curl --noproxy "*" [URL] # 对于指定的域名，不以代理访问
 ```
-
-

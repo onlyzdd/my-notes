@@ -39,6 +39,8 @@ $ nohup cmd & # 将命令执行放至后台
 $ exit # 在不使用此终端时，正常退出，防止异常退出导致 nohup 命令失效
 ```
 
+除了 `nohup` 命令，还可以使用终端多路复用软件，例如 `screen` 以及更好用的 `tmux`。
+
 ## 文件操作
 
 Linux 上一切皆文件，目录也是文件的一种。
@@ -620,7 +622,7 @@ $ file test.pdf # => test.pdf: PDF document, version 1.3
 
 ### 命令未找到
 
-Bash 中执行命令时，会从 `PATH` 环境变量中寻找该命令（还有其他的方式，比如别名等）。如果提示命令未找到，一般情况下都是 `PATH` 环境变量的问题。解决方式一般是将可执行文件的路径添加到 `PATH` 中，另一种是通过 `ln -s` 直接为该命令创建软链接，保证软链接所在位置在 `PATH` 中就好。
+Bash 中执行命令时，会从 `PATH` 环境变量中寻找该命令（还有其他的方式，比如别名等）。如果提示命令未找到，一般情况下都是 `PATH` 环境变量的问题，可以通过 `echo $PATH` 查看环境变量是否正确。解决方式一般是将可执行文件的路径添加到 `PATH` 中，另一种是通过 `ln -s` 直接为该命令创建软链接，保证软链接所在位置在 `PATH` 中就好。
 
 ## 附录
 
@@ -644,6 +646,10 @@ Bash 中执行命令时，会从 `PATH` 环境变量中寻找该命令（还有�
 
 ### 参考链接
 
+- VSCode
+    - [VSCode 远程开发](https://code.visualstudio.com/docs/remote/ssh-tutorial)
+- Tmux
+    - [Tmux 终端多路复用](https://github.com/tmux/tmux/wiki)
 - Zsh
     - [Zsh: 更强的 Shell](http://www.zsh.org/)
     - [oh-my-zsh：增强 Zsh](https://ohmyz.sh/)
