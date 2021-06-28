@@ -8,6 +8,7 @@
     - [常用的 Bash 命令](./linux/bash-commands.md)
     - [让你的 Bash 飞起来](./linux/master-bash.md)
     - [SSH 基本原理及应用](./linux/introduction-to-ssh.md)
+    - [tmux 终端多路复用](./linux/tmux.md)
     - [Awk 和 Sed](./linux/awk-sed.md)
     - [使用 Make](./linux/using-make.md)
   - VSCode：卓越的代码编辑器和开发工具
