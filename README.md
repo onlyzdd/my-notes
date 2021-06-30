@@ -30,6 +30,7 @@
     - [npm scripts 使用指南](./languages/npm/npm-scripts-guides.md)
 
 - 其他
+  - [Docker 容器技术](./know-it/docker.md)
   - [Shadowsocks 代理](./know-it/ss.md)
   - [重新认识 JSON](./know-it/introduction-to-json.md)
   - [重新认识 QRCode](./know-it/introduction-to-qrcode.md)
