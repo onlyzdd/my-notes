@@ -68,9 +68,12 @@ menu, ul, ol {
 }
 
 #disqus_thread {
+    max-width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
     background: url(../images/body-background.png) #eae6d1
 }
 
-#beian p a {
+p#beian a {
     color: #666;
 }
