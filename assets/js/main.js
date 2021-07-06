@@ -30,4 +30,13 @@ $(function () {
     sectionHeight();
 
     $('img').on('load', sectionHeight);
+    if (location.hostname.endsWith('.github.io')) {
+        $('#beian').attr('hidden', true)
+        $('#maintainer').attr('hidden', false)
+    } else {
+        $('#beian').attr('hidden', false)
+        $('#maintainer').attr('hidden', true)
+    }
 });
+
+

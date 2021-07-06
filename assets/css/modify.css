@@ -21,7 +21,7 @@ nav ul {
 
 footer {
     width: 100%;
-    text-align: right;
+    text-align: center;
     position: unset;
     margin-left: 0;
 }
@@ -67,6 +67,10 @@ menu, ul, ol {
     padding-left: 10px;
 }
 
-#disqus {
+#disqus_thread {
     background: url(../images/body-background.png) #eae6d1
+}
+
+#beian p a {
+    color: #666;
 }
