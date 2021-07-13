@@ -2,6 +2,18 @@ theme: jekyll-theme-leap-day
 title: "onlyzdd的博客"
 description: "学习，生命中最美丽的两个字！"
 show_downloads: false
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "README.md"
+    values:
+      permalink: "index.html"
 plugins:
+  - jekyll-optional-front-matter
   - jekyll-feed
   - jekyll-sitemap
