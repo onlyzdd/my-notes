@@ -22,7 +22,7 @@
   - [HTML 文档声明](./web-front-end/html/html-doctype-declaration.md)
   - [HTML head 元素详解](./web-front-end/html/html-head-cheatsheet.md)
 - CSS：层叠样式表
-  - [CSS 动画](./web-front-end/css/css-animate.md)
+  - [CSS 过渡和动画](./web-front-end/css/transition-animation.md)
   - [CSS Flexbox 布局](./web-front-end/css/flexbox-layout.md)
 - JavaScript：JS脚本语言
   - [Babel 教程](./web-front-end/javascript/babel-tutorial.md)
