@@ -67,13 +67,6 @@ menu, ul, ol {
     padding-left: 10px;
 }
 
-#disqus_thread {
-    max-width: 600px;
-    padding: 0 10px;
-    margin: 0 auto;
-    background: url(../images/body-background.png) #eae6d1
-}
-
 p#beian a {
     color: #666;
 }
