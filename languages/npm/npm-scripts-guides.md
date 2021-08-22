@@ -5,7 +5,7 @@ Node 开发离不开 npm，而脚本功能是 npm 最强大、最常用的功能
 
 本文介绍如何使用 npm 脚本（npm scripts）。
 
-![Build tools the Npm way](http://img2.tuicool.com/numq2uU.jpg!web)
+![Build tools the Npm way](./npm-way.webp)
 
 一、什么是 npm 脚本？
 --------
